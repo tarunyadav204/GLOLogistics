@@ -1,0 +1,26 @@
+.login-container {
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.login-overlay {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 350px;
+    padding: 30px;
+}

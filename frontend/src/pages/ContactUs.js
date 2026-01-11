@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import ContactCards from "./ContactCards";
+import ContactCards from "../components/ContactCards";
 import "../App.css";
 
 const ContactGrid = styled(Grid)({

@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./../App.css";
+import { useDispatch, useSelector } from "react-redux";
+import { authActions } from "../store/authSlice";
 
 function Navbar() {
-    const email = "user@example.com";
+    const email = useSelector((state) => state.auth.email);
+    console.log("Navbar email:", email)
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     ;
     const handleLogout = () => {
-        console.log("Logout clicked");
+    dispatch(authActions.logout());
+    navigate("/");
     };
 
     return (
